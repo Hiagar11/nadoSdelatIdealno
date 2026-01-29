@@ -14,11 +14,13 @@ body {
   height: inherit;
   position: relative;
   min-width: 800px;
+  max-width: 2400px;
+  height: 1350px;
+  aspect-ratio: 16 / 9;
 }
 
 video {
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: -1;
   position: absolute;
   width: 100%;
@@ -28,8 +30,18 @@ video {
 }
 
 h1 {
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   font-weight: 700;
-  font-size: 116px;
-  letter-spacing: 3.5%;
+  font-size: 185px;
+  letter-spacing: -2px;
+  line-height: 111%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  padding: 95px;
+  align-items: center;
+}
+
+span:last-child {
+  letter-spacing: 5px;
 }
